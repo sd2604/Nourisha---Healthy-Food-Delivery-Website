@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Privacy - Nourisha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Nourisha 🌿</div>
+      <div class="nav-location">📍 Location: <span>Static City</span></div>
+      <input type="search" class="nav-search" placeholder="Search for healthy food..." />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="meal-plan.html">Meal Plan</a></li>
+        <li><a href="calorie-counter.html">Calorie Counter</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact-privacy.html" class="active">Contact &amp; Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="contact-section" aria-label="Contact Form">
+      <h2>Contact Us</h2>
+      <form action="#" method="post" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..." rows="5"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="privacy-section" id="privacy" aria-label="Privacy Policy" style="margin-top: 3rem;">
+      <h3>Privacy Policy</h3>
+      <p>
+        Nourisha respects your privacy. Any information you provide is protected and only used to enhance your experience.
+      </p>
+      <p>
+        We do not share your personal data with third parties without consent. By using this website, you agree to our privacy terms.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact-privacy.html">Contact</a>
+      <a href="contact-privacy.html#privacy">Privacy</a>
+    </div>
+    <div class="footer-contact">
+      <span>Email: support@nourisha.com</span> | <span>Instagram</span> | <span>Facebook</span>
+    </div>
+    <div class="footer-copy">© 2025 Nourisha. Eat Smart. Live Strong.</div>
+  </footer>
+</body>
+</html>

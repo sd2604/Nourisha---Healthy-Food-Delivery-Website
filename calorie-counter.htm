@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu - Nourisha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Additional styling specific for menu images and layout */
+    .menu-category h2 {
+      color: #3b6f36;
+      font-weight: 700;
+      margin-bottom: 1.8rem;
+      border-bottom: 3px solid #87b469;
+      padding-bottom: 0.3em;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+    .menu-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 1.75rem;
+      margin-bottom: 3rem;
+    }
+    .menu-card {
+      background: #f6fbeb;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px #bccf98cc;
+      padding: 1rem 1.2rem 1.5rem 1.2rem;
+      cursor: default;
+      transition: transform 0.25s ease, box-shadow 0.3s ease;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .menu-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 12px 32px #b7d37cdd;
+    }
+    .menu-card img {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+    }
+    .menu-card h4 {
+      font-size: 1.2rem;
+      color: #3a6a29;
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+    }
+    .menu-card p {
+      color: #556d32;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Nourisha</div>
+      <div class="nav-location">📍 Location: <span>Static City</span></div>
+      <input type="search" class="nav-search" placeholder="Search for healthy food..." />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="meal-plan.html">Meal Plan</a></li>
+        <li><a href="calorie-counter.html">Calorie Counter</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact-privacy.html">Contact &amp; Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section aria-label="Salads Menu">
+      <h2>Salads</h2>
+      <div class="menu-cards">
+        <article class="menu-card" tabindex="0">
+          <img src="https://i.pinimg.com/1200x/e6/70/c5/e670c5cd2bb25028dd7f10ee241cea4c.jpg" alt="Avocado Quinoa Salad" />
+          <h4>Avocado Quinoa Salad</h4>
+          <p>350 kcal | ₹300</p>
+        </article>
+        <article class="menu-card" tabindex="0">
+          <img src="https://i.pinimg.com/1200x/59/83/2c/59832c005f1afbf4119ed10192240c87.jpg" alt="Kale Caesar Salad" />
+          <h4>Kale Caesar Salad</h4>
+          <p>320 kcal | ₹280</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="Smoothies Menu" style="margin-top:3rem;">
+      <h2>Smoothies</h2>
+      <div class="menu-cards">
+        <article class="menu-card" tabindex="0">
+          <img src="https://i.pinimg.com/1200x/c9/3d/44/c93d443c024aac847eb4299f0c7770f1.jpg" alt="Mango Spinach Smoothie" />
+          <h4>Mango Spinach Smoothie</h4>
+          <p>220 kcal | ₹250</p>
+        </article>
+        <article class="menu-card" tabindex="0">
+          <img src="https://i.pinimg.com/736x/22/28/92/222892e5478e2a380a02193125e5b436.jpg" alt="Berry Blast Smoothie" />
+          <h4>Berry Blast Smoothie</h4>
+          <p>200 kcal | ₹270</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="Protein Bowls Menu" style="margin-top:3rem;">
+      <h2>Protein Bowls</h2>
+      <div class="menu-cards">
+        <article class="menu-card" tabindex="0">
+          <img src="https://i.pinimg.com/736x/26/40/17/26401729318f52461beec4c725577260.jpg" alt="Grilled Chicken Protein Bowl" />
+          <h4>Grilled Chicken Protein Bowl</h4>
+          <p>450 kcal | ₹350</p>
+        </article>
+        <article class="menu-card" tabindex="0">
+          <img src="https://i.pinimg.com/736x/c7/2e/c4/c72ec4502f890bbcfa2385f89428ec07.jpg" alt="Tofu Power Bowl" />
+          <h4>Tofu Power Bowl</h4>
+          <p>400 kcal | ₹320</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact-privacy.html">Contact</a>
+      <a href="contact-privacy.html#privacy">Privacy</a>
+    </div>
+    <div class="footer-contact">
+      <span>Email: support@nourisha.com</span> | <span>Instagram</span> | <span>Facebook</span>
+    </div>
+    <div class="footer-copy">© 2025 Nourisha. Eat Smart. Live Strong.</div>
+  </footer>
+</body>
+</html>

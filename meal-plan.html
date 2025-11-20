@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meal Plans – Nourisha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #fafef6;
+      color: #222;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 2.7rem 1.5rem 2rem;
+    }
+    h2 {
+      text-align: left;
+      color: #3b6f36;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .plan-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .plan-card {
+      background: #fff;
+      border-radius: 22px;
+      box-shadow: 0 8px 28px rgba(38,115,47,0.13);
+      width: 320px;
+      min-width: 260px;
+      max-width: 345px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.5rem 1.3rem 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: box-shadow 0.18s, transform 0.16s;
+    }
+    .plan-card:hover {
+      box-shadow: 0 12px 36px rgba(38,115,47,0.24);
+      transform: translateY(-6px) scale(1.03);
+    }
+    .plan-card img {
+      width: 100%;
+      border-radius: 20px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      margin-bottom: 1.1rem;
+      box-shadow: 0 2px 12px rgba(38,115,47,0.15);
+    }
+    .plan-card h3 {
+      font-size: 1.32rem;
+      font-weight: 800;
+      color: #346e35;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+    .plan-desc {
+      color: #444e38;
+      font-size: 1.05rem;
+      margin-bottom: 0.65rem;
+      text-align: left;
+      min-height: 55px;
+      font-weight: 500;
+    }
+    .plan-price {
+      color: #e44;
+      font-weight: 700;
+      font-size: 1.09rem;
+      margin-bottom: 1.1rem;
+      text-align: left;
+      width: 100%;
+    }
+    .plan-price span {
+      color: #d12;
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+    .plan-btn {
+      background-color: #e44;
+      padding: 0.65em 2em;
+      border-radius: 18px;
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      font-size: 1rem;
+      box-shadow: 0 3px 8px #d12a2ab8;
+      transition: background 0.15s, box-shadow 0.18s;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      width: 100%;
+      max-width: 200px;
+      display: inline-block;
+    }
+    .plan-btn:hover,
+    .plan-btn:focus {
+      background: #b41b1b;
+      box-shadow: 0 7px 22px #d12a2ab8;
+    }
+    @media (max-width: 1050px) {
+      .plan-row {
+        gap: 1.1rem;
+      }
+      .plan-card {
+        width: 90vw;
+        max-width: 400px;
+      }
+      h2 {
+        font-size: 1.65rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+    @media (max-width: 780px) {
+      .plan-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .plan-card {
+        width: 98vw;
+        max-width: 490px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Nourisha 🌿</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="meal-plan.html" class="active">Meal Plan</a></li>
+        <li><a href="calorie-counter.html">Calorie Counter</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact-privacy.html">Contact &amp; Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Curated Meal Plans</h2>
+    <div class="plan-row">
+      <div class="plan-card">
+        <img src="https://i.pinimg.com/1200x/fd/49/60/fd496059a0565f95fa7e74909e7ade9a.jpg" alt="Weight Loss Plan">
+        <h3>Weight Loss Plan</h3>
+        <div class="plan-desc">
+          Thoughtfully designed to help you shed pounds with hearty salads, portion control, and fibre-rich ingredients.
+        </div>
+        <div class="plan-price">From: <span>₹299</span></div>
+        <a href="#" class="plan-btn">Read more</a>
+      </div>
+      <div class="plan-card">
+        <img src="https://i.pinimg.com/736x/de/13/60/de136034754a221a337012773a65ea56.jpg" alt="Muscle Gain Plan">
+        <h3>Muscle Gain Plan</h3>
+        <div class="plan-desc">
+          High-protein meals, power bowls, and balanced carbs crafted for energy, strength, and recovery.
+        </div>
+        <div class="plan-price">From: <span>₹399</span></div>
+        <a href="#" class="plan-btn">Read more</a>
+      </div>
+      <div class="plan-card">
+        <img src="https://i.pinimg.com/1200x/5c/f9/1d/5cf91d1b4365e2dbecabf8cfb4632819.jpg" alt="Maintenance Plan">
+        <h3>Maintenance Plan</h3>
+        <div class="plan-desc">
+          Balanced nutrition for everyday health; a variety of meals to keep you fit and nourished.
+        </div>
+        <div class="plan-price">From: <span>₹349</span></div>
+        <a href="#" class="plan-btn">Read more</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact-privacy.html">Contact</a>
+      <a href="contact-privacy.html#privacy">Privacy</a>
+    </div>
+    <div class="footer-contact">
+      <span>Email: support@nourisha.com</span> | <span>Instagram</span> | <span>Facebook</span>
+    </div>
+    <div class="footer-copy">© 2025 Nourisha. Eat Smart. Live Strong.</div>
+  </footer>
+</body>
+</html>
