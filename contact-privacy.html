@@ -1,67 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact & Privacy - Nourisha</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Nourisha 🌿</div>
-      <div class="nav-location">📍 Location: <span>Static City</span></div>
-      <input type="search" class="nav-search" placeholder="Search for healthy food..." />
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="meal-plan.html">Meal Plan</a></li>
-        <li><a href="calorie-counter.html">Calorie Counter</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact-privacy.html" class="active">Contact &amp; Privacy</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Privacy – Nourisha🌿</title>
 
-  <main class="container">
-    <section class="contact-section" aria-label="Contact Form">
-      <h2>Contact Us</h2>
-      <form action="#" method="post" novalidate>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required />
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Nourisha🌿</div>
+        <div class="nav-location">
+          📍 Location: <span id="user-city">Detecting...</span>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message..." rows="5"></textarea>
+        <input
+          type="search"
+          class="nav-search"
+          placeholder="Search for healthy food..."
+        />
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="meal-plan.html">Meal Plan</a></li>
+          <li><a href="calorie-counter.html">Calorie Counter</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li>
+            <a href="contact-privacy.html" class="active"
+              >Contact &amp; Privacy</a
+            >
+          </li>
+        </ul>
 
-    <section class="privacy-section" id="privacy" aria-label="Privacy Policy" style="margin-top: 3rem;">
-      <h3>Privacy Policy</h3>
-      <p>
-        Nourisha respects your privacy. Any information you provide is protected and only used to enhance your experience.
-      </p>
-      <p>
-        We do not share your personal data with third parties without consent. By using this website, you agree to our privacy terms.
-      </p>
-    </section>
-  </main>
+        <div class="nav-cart" id="nav-cart">
+          🛒 <span id="cart-count">0</span>
+        </div>
+      </nav>
+    </header>
 
-  <footer>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="contact-privacy.html">Contact</a>
-      <a href="contact-privacy.html#privacy">Privacy</a>
+    <main class="container">
+      <!-- Contact -->
+      <section class="contact-section">
+        <h2 class="menu-section-title">Contact Us</h2>
+
+        <form id="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Your email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message..."></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Privacy -->
+      <section class="privacy-section" id="privacy">
+        <h2 class="menu-section-title">Privacy Policy</h2>
+        <p>
+          Nourisha respects your privacy. Any information you provide is used
+          only to deliver your orders, improve recommendations and support you.
+        </p>
+        <p>
+          We do not sell or share your personal data with third parties without
+          your consent. Basic analytics may be used to understand how our site
+          is used so we can keep improving the experience.
+        </p>
+        <p>
+          By using this website you agree to the collection and use of
+          information in accordance with this policy. You can contact us any
+          time to update or remove your data.
+        </p>
+      </section>
+    </main>
+
+    <!-- Cart slide panel -->
+    <div id="cart-panel" class="cart-panel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="cart-close-btn" class="cart-close-btn">×</button>
+      </div>
+
+      <div id="cart-items" class="cart-items">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <span>₹<span id="cart-total">0</span></span>
+        </div>
+        <button id="cart-clear-btn" class="cart-clear-btn">Clear Cart</button>
+      </div>
     </div>
-    <div class="footer-contact">
-      <span>Email: support@nourisha.com</span> | <span>Instagram</span> | <span>Facebook</span>
-    </div>
-    <div class="footer-copy">© 2025 Nourisha. Eat Smart. Live Strong.</div>
-  </footer>
-</body>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact-privacy.html">Contact</a>
+        <a href="contact-privacy.html#privacy">Privacy</a>
+      </div>
+      <div class="footer-contact">
+        <span>Email: support@nourisha.com</span> | <span>Instagram</span> |
+        <span>Facebook</span>
+      </div>
+      <div class="footer-copy">© 2025 Nourisha. Eat Smart. Live Strong.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
+
